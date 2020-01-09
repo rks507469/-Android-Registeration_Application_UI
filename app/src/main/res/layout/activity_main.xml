@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+    <!--
+    Background color will be a gradient and will be from the top to bottom
+    Start Color : #00d2ff
+    Center Color : #1DA7EA
+    End Color : #3a7bd5
+    -->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dip"
+            android:text="@string/sign_up"
+            android:fontFamily="@font/montserrat"
+            android:textSize="28sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/sign_up_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_an_account_to_start_doing_more"
+            android:fontFamily="@font/montserrat"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:paddingTop="5dip"
+            android:textStyle="normal"
+            android:gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="25"
+            android:inputType="textPersonName"
+            android:hint="@string/full_name"
+            android:layout_marginLeft="22dip"
+            android:layout_marginRight="22dip"
+            android:layout_marginTop="32dip"
+            android:background="@drawable/rounded_edge"
+            android:padding="12dip"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hintColor"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="25"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"
+            android:layout_marginLeft="22dip"
+            android:layout_marginRight="22dip"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/rounded_edge"
+            android:padding="12dip"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hintColor"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="@string/mobile"
+            android:layout_marginLeft="22dip"
+            android:layout_marginRight="22dip"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/rounded_edge"
+            android:padding="12dip"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hintColor"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:layout_marginLeft="22dip"
+            android:layout_marginRight="22dip"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/rounded_edge"
+            android:padding="12dip"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hintColor"
+            android:importantForAutofill="no"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dip"
+            android:layout_marginRight="22dip"
+            android:layout_marginTop="16dip"
+            android:padding="12dip"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
+            android:background="@drawable/rounded_signup_button"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
